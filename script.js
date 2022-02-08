@@ -38,3 +38,26 @@ while (true) {
     break;
   }
 }
+
+// ---------Extended Challenge
+
+const hours = 30;
+const wage = 10;
+
+if (hours <= 40) {
+  const pay = hours * wage;
+  const weeks = Math.floor(1000000 / pay);
+  console.log(
+    `Your paycheck comes out to ${
+      hours * wage
+    }. It will take ${weeks} to make $1,000,000`
+  );
+} else {
+  const pay = hours * wage;
+  const weeks = Math.floor(1000000 / pay);
+  console.log(
+    `Your pay will be $${
+      wage * 40 + (hours - 40) * (wage * 1.5)
+    }. It will take ${weeks} to make $1,000,000`
+  );
+}
