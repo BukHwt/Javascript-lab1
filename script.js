@@ -24,14 +24,14 @@ for (let i = 0; i < lifeEvents.length; i++) {
 }
 
 let counter = 0;
-let randomNumber = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
 
-while (randomNumber !== 5) {
+while (true) {
   let randomNumber = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
   if (randomNumber !== 5) {
     counter++;
     console.log(`${randomNumber} !== 5`);
   } else {
+    counter++;
     console.log(
       `${randomNumber} === 5! and it took ${counter} iterations to complete`
     );
